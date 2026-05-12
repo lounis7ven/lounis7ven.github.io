@@ -1042,5 +1042,202 @@ APP_DATA.exerciseSets = {
   "fonctions-usuelles": [],
   "polynomes": []
 };
+APP_DATA.quizzes = {
+  "etude-fonction": [
+    {
+      id: "q-continuité-1",
+      question: "Une fonction \\( f \\) est continue en \\( a \\) si :",
+      options: [
+        "\\( f'(a)=0 \\)",
+        "\\( \\lim_{x\\to a} f(x)=f(a) \\)",
+        "\\( f(a)=0 \\)",
+        "\\( f \\) est forcément croissante"
+      ],
+      correctIndex: 1,
+      explanation: "La continuité en \\( a \\) signifie que la limite de \\( f(x) \\) quand \\( x \\to a \\) est égale à la valeur \\( f(a) \\)."
+    },
+    {
+      id: "q-tvi-1",
+      question: "Le théorème des valeurs intermédiaires permet de montrer :",
+      options: [
+        "Qu’une équation possède au moins une solution",
+        "Qu’une fonction est toujours dérivable",
+        "Qu’une fonction est paire",
+        "Qu’une tangente est horizontale"
+      ],
+      correctIndex: 0,
+      explanation: "Le TVI garantit l’existence d’au moins une solution lorsque la fonction est continue sur un intervalle."
+    },
+    {
+      id: "q-bijection-1",
+      question: "Pour utiliser le théorème de bijection, il faut généralement montrer que la fonction est :",
+      options: [
+        "Continue et strictement monotone",
+        "Paire et impaire",
+        "Toujours positive",
+        "Définie uniquement sur \\( \\mathbb{R}^+ \\)"
+      ],
+      correctIndex: 0,
+      explanation: "Le théorème de bijection demande la continuité et la stricte monotonie sur l’intervalle étudié."
+    },
+    {
+      id: "q-derivee-1",
+      question: "La dérivée \\( f'(x_0) \\) représente géométriquement :",
+      options: [
+        "L’aire sous la courbe",
+        "Le coefficient directeur de la tangente",
+        "L’ordonnée à l’origine",
+        "La limite de \\( f \\) en \\( +\\infty \\)"
+      ],
+      correctIndex: 1,
+      explanation: "La dérivée en un point correspond à la pente de la tangente à la courbe en ce point."
+    },
+    {
+      id: "q-tangente-1",
+      question: "L’équation de la tangente à \\( C_f \\) au point d’abscisse \\( x_0 \\) est :",
+      options: [
+        "\\( T(x)=f(x_0)(x-x_0)+f'(x_0) \\)",
+        "\\( T(x)=f'(x_0)(x-x_0)+f(x_0) \\)",
+        "\\( T(x)=f'(x)+f(x) \\)",
+        "\\( T(x)=x_0f(x) \\)"
+      ],
+      correctIndex: 1,
+      explanation: "La formule correcte est \\( T(x)=f'(x_0)(x-x_0)+f(x_0) \\)."
+    }
+  ],
 
+  "fonctions-usuelles": [
+    {
+      id: "q-exp-1",
+      question: "La dérivée de \\( e^x \\) est :",
+      options: [
+        "\\( x e^{x-1} \\)",
+        "\\( e^x \\)",
+        "\\( \\ln(x) \\)",
+        "\\( \\frac{1}{x} \\)"
+      ],
+      correctIndex: 1,
+      explanation: "La fonction exponentielle est sa propre dérivée."
+    },
+    {
+      id: "q-ln-1",
+      question: "La dérivée de \\( \\ln(x) \\) est :",
+      options: [
+        "\\( x \\)",
+        "\\( e^x \\)",
+        "\\( \\frac{1}{x} \\)",
+        "\\( \\ln(x) \\)"
+      ],
+      correctIndex: 2,
+      explanation: "Pour \\( x>0 \\), on a \\( (\\ln x)'=\\frac{1}{x} \\)."
+    },
+    {
+      id: "q-composee-1",
+      question: "La dérivée de \\( \\ln(u(x)) \\) est :",
+      options: [
+        "\\( \\frac{1}{u(x)} \\)",
+        "\\( \\frac{u'(x)}{u(x)} \\)",
+        "\\( u'(x)u(x) \\)",
+        "\\( \\ln(u'(x)) \\)"
+      ],
+      correctIndex: 1,
+      explanation: "Pour une fonction composée, \\( (\\ln u)'=\\frac{u'}{u} \\)."
+    }
+  ],
+
+  "complexes": [
+    {
+      id: "q-complexe-1",
+      question: "Si \\( z=a+ib \\), alors le module de \\( z \\) est :",
+      options: [
+        "\\( a+b \\)",
+        "\\( a^2+b^2 \\)",
+        "\\( \\sqrt{a^2+b^2} \\)",
+        "\\( \\frac{a}{b} \\)"
+      ],
+      correctIndex: 2,
+      explanation: "Le module d’un complexe \\( z=a+ib \\) est \\( |z|=\\sqrt{a^2+b^2} \\)."
+    },
+    {
+      id: "q-complexe-2",
+      question: "Dans \\( z=3-4i \\), la partie imaginaire vaut :",
+      options: [
+        "3",
+        "-4",
+        "4",
+        "-4i"
+      ],
+      correctIndex: 1,
+      explanation: "La partie imaginaire est le coefficient de \\( i \\), donc \\( -4 \\), pas \\( -4i \\)."
+    },
+    {
+      id: "q-euler-1",
+      question: "La formule d’Euler s’écrit :",
+      options: [
+        "\\( e^{i\\theta}=\\cos(\\theta)+i\\sin(\\theta) \\)",
+        "\\( e^{i\\theta}=\\sin(\\theta)+i\\cos(\\theta) \\)",
+        "\\( e^{\\theta}=\\cos(\\theta) \\)",
+        "\\( i^2=1 \\)"
+      ],
+      correctIndex: 0,
+      explanation: "La formule d’Euler est \\( e^{i\\theta}=\\cos(\\theta)+i\\sin(\\theta) \\)."
+    }
+  ],
+
+  "polynomes": [
+    {
+      id: "q-rationnelle-1",
+      question: "Dans une fraction rationnelle, les valeurs qui annulent le dénominateur sont :",
+      options: [
+        "Toujours autorisées",
+        "Des valeurs interdites",
+        "Des maximums",
+        "Des primitives"
+      ],
+      correctIndex: 1,
+      explanation: "On ne peut pas diviser par zéro : les racines du dénominateur sont donc des valeurs interdites."
+    },
+    {
+      id: "q-racine-1",
+      question: "Si \\( P(\\alpha)=0 \\), alors \\( \\alpha \\) est :",
+      options: [
+        "Une primitive de \\( P \\)",
+        "Une asymptote de \\( P \\)",
+        "Une racine de \\( P \\)",
+        "Une dérivée de \\( P \\)"
+      ],
+      correctIndex: 2,
+      explanation: "Une racine d’un polynôme est une valeur qui annule ce polynôme."
+    }
+  ],
+
+  "integrales": [
+    {
+      id: "q-primitive-1",
+      question: "Une fonction \\( F \\) est une primitive de \\( f \\) si :",
+      options: [
+        "\\( F'(x)=f(x) \\)",
+        "\\( f'(x)=F(x) \\)",
+        "\\( F(x)=f(x) \\)",
+        "\\( F(x)=0 \\)"
+      ],
+      correctIndex: 0,
+      explanation: "Par définition, \\( F \\) est une primitive de \\( f \\) lorsque \\( F'=f \\)."
+    },
+    {
+      id: "q-integrale-1",
+      question: "Si \\( F \\) est une primitive de \\( f \\), alors :",
+      options: [
+        "\\( \\int_a^b f(x)dx = F(a)-F(b) \\)",
+        "\\( \\int_a^b f(x)dx = F(b)-F(a) \\)",
+        "\\( \\int_a^b f(x)dx = f(b)-f(a) \\)",
+        "\\( \\int_a^b f(x)dx = 0 \\)"
+      ],
+      correctIndex: 1,
+      explanation: "La formule fondamentale est \\( \\int_a^b f(x)dx = F(b)-F(a) \\)."
+    }
+  ]
+};
+
+window.APP_DATA = APP_DATA;
 window.APP_DATA = APP_DATA;
