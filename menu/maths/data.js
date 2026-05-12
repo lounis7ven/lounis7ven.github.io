@@ -1042,3 +1042,5 @@ APP_DATA.exerciseSets = {
   "fonctions-usuelles": [],
   "polynomes": []
 };
+
+window.APP_DATA = APP_DATA;
